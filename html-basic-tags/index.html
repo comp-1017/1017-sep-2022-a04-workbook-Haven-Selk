@@ -26,10 +26,45 @@
     paragraph tag p: this tag indicates the content to be a paragraph
 -->
 <h1> Basic Html Tags</h1>
+<h3>Paragraph tag</h3>
 <p>This page demonstrates the basic structure of an html web page. The head area has the
     the broweser title tab specified as well as the charset defined. The body is demonstrating
     the h1 header tag and the paragraph tag.
 </p>
 <p>This is another paragraph</p>
+<!--
+    if you wish to use a component for a reserve tag (or the whole tag)
+    you would be in trouble using the tag
+    instead: you can use special charater strings to represent 
+    components of the tag such as the < (&lt;) and the > (&gt;)
+    symbola
+-->
+<h3>List tags: &lt;ol&gt; and &lt;ul&gt; </h3>
+<!-- 
+    block tag , paired
+    create an ordered list (numbered) using <ol>
+    create an unordered list (bulleted) using <ul>
+    items in the list are indicated using the line item <li>
+-->
+<ol>
+    <li> Add extension Live Server for Go Live execution from VSC</li>
+    <li>Open exctensions using 5 icon on left by menu</li>
+    <li> Either search for Live Server or selkect if seen on list</li>
+    <li>Press install</li>
+    <li> To Use
+        <ol> 
+        <li> open an html page</li>
+        <li>mmake any adjustments</li>
+        <li>Save adjustments</li>
+        <li>look to bottom right on blue status line for Go Live and press</li>
+        <li> make additional adjustments, save and return to browser to see updates</li>
+    </ol>
+    </li>
+</ol>
+<ul>
+    <li> this is an unordered list</li>
+    <li>default display is a bulleted list</li>
+    <li>we will see later how to remove these bullets using css styling</li>
+</ul>
     </body>
 </html>
