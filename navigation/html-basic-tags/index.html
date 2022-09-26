@@ -25,13 +25,26 @@
 
     paragraph tag p: this tag indicates the content to be a paragraph
 -->
-<h1> Basic Html Tags</h1>
-<h3>Paragraph tag</h3>
+<header>
+    <h1> Basic Html Tags</h1>
+    <nav>
+        <h2>Nav tags titles are optional</h2>
+        <ul>
+            <li><a href="../index.html">Home</a> </li>
+            <li> <a href="../semantic-tags.html">Semantics</a></li>
+            <li><a href="#">Html Basics</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+<h2>Paragraph tag</h2>
 <p>This page demonstrates the basic structure of an html web page. The head area has the
     the broweser title tab specified as well as the charset defined. The body is demonstrating
     the h1 header tag and the paragraph tag.
 </p>
 <p>This is another paragraph</p>
+</section>
 <!--
     if you wish to use a component for a reserve tag (or the whole tag)
     you would be in trouble using the tag
@@ -39,7 +52,8 @@
     components of the tag such as the < (&lt;) and the > (&gt;)
     symbola
 -->
-<h3>List tags: &lt;ol&gt; and &lt;ul&gt; </h3>
+<section>
+<h2>List tags: &lt;ol&gt; and &lt;ul&gt; </h2>
 <!-- 
     block tag , paired
     create an ordered list (numbered) using <ol>
@@ -66,8 +80,10 @@
     <li>default display is a bulleted list</li>
     <li>we will see later how to remove these bullets using css styling</li>
 </ul>
+</section>
 
-<h3>Anchor tag (a.k.a linking to another page)</h3>
+<section>
+<h2>Anchor tag (a.k.a linking to another page)</h2>
 <!-- blocked paired
     This is an anchor tag and is incorrectly often referred to as the
         link tag
@@ -84,8 +100,9 @@
             _blank will open a new browser tab (page)
 -->
 <a href="https://www.nait.ca" target="_blank">go to Nait</a>
-
-<h3>Image tag</h3>
+</section>
+<section>
+<h2>Image tag</h2>
 <!--an empty (void) tag
     image tag does not have a closing tag
     the image tag has no content, however it does have parameters
@@ -120,16 +137,17 @@
     .. for each level that needs to be ascended
     ="../../../nextleveldownfoldername/filename.ext"
 -->
-<img src="img/photoshop.png" alt="logo photoshop"
+<img src="../img/photoshop.png" alt="logo photoshop"
     title="a logo image of Photoshop">
 
     <!--
         combine the anchor tag and the image tag as the anchor tag content
     -->
     <a href="https://www.adobe.com" target="_blank">
-        <img src="img/photoshop.png" alt="logo photoshop"
+        <img src="../img/photoshop.png" alt="logo photoshop"
         title="a logo image of Photoshop" style="width:80px; height:80px">
     </a> 
-
+</section>
+</main>
     </body>
 </html>
