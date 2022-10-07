@@ -4,6 +4,13 @@
         <title>CSS StyleSheet</title>
         <meta charset="utf-8">
         <meta name="author" content="Haven Selk">
+        <!--using css located inside a style sheet requires a link tag to 
+            point to the CSS file.
+            use relative adressing to reference the CSS stylesheet
+        
+            The href on the link tag can point to css files locally and/or on a
+            different website. -->
+            <link href="css/mystyling.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -20,52 +27,30 @@
             </nav>
         </header>
         <main>
-            <section>
-            <h2>CSS oding styles</h2>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td>Browser Defaults</td>
-                        <td width="400px">you have not supplied any css code</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Inline</td>
-                        <td>this is for a single specific element (tag) instance. the 
-                            element contains a parameter called style="".
-                        </td>
-                        <td>style="rule; [rule; ...]"</td>
-                        <td>style="color:red; width:50px;"</td>
-                    </tr>
-                    <tr>
-                        <td>Embedded</td>
-                        <td>coded in your head area of the web page. is started with
-                                the style element and contains the selectors and rules
-                                for the desired css. apllies ONLY to the physical page
-                                where the code is placed. Affects all selectors on the
-                                page
-                        </td>
-                        <td>&lt;style&gt;<br />selector {rule; [rule; ...]} <br />
-                        [selector {rule; [rule; ...]} ...]<br />/&lt;/style&gt;</td>
-                        <td>&lt;style&gt;<br />p {font-size:large; font-weight:bold;}<br />
-                            blockquote {width:350px;}<br />/&lt;/style&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>Stylesheet</td>
-                        <td>similar to embedded however, the selectors and rules are coded
-                            in a seperate physical file. this file can be shared throughout 
-                            the entire web site. thus, all css is in one common place.
-                        </td>
-                        <td>selector {rule; [rule; ...]} <br />
-                            [selector {rule; [rule; ...]} ...]</td>
-                            <td>p {font-size:large; font-weight:bold;}<br/>
-                                blockquote {width:350px;}</td>
-                        
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+          <section>
+        <h2>Sample Inline CSS on paragraph element</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p style="color:forestgreen; font-weight: bold;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>  
         </main>
         <footer>
     
